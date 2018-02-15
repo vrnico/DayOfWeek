@@ -1,17 +1,19 @@
-// using Microsoft.AspNetCore.Mvc;
-// using Scrabble.Models;
-//
-// namespace Scrabble.Controllers
-// {
-//   public class HomeController : Controller
-//   {
-//     [HttpGet("/")]
-//     public ActionResult Index()
-//     {
-//       string emptyString = "";
-//       return View("Index", emptyString);
-//     }
-//
+using Microsoft.AspNetCore.Mvc;
+using DayOfWeek.Models;
+
+namespace DayOfWeek.Controllers
+{
+  public class HomeController : Controller
+  {
+    [HttpGet("/")]
+    public ActionResult Index()
+    {
+      string emptyString = "";
+      return View("Index", emptyString);
+    }
+  }
+}
+
 //     [HttpPost("/result")]
 //     public ActionResult Result()
 //     {

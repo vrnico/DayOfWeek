@@ -25,13 +25,13 @@ namespace DayOfWeek.Tests
     public void TakeInputDate_ReturnDayOfTheWeek()
     {
         //arrange
-        string testName = "Thu";
+        string testName = "Thursday";
         List<int> testDay = new List<int> {2018, 2, 15};
         DayOfWeekGenerator newDWG = new DayOfWeekGenerator(2018, 2, 15);
 
         //act
         DateTime dateValue = new DateTime(newDWG.GetYear(), newDWG.GetMonth(), newDWG.GetDay());
-        string dayName = dateValue.ToString("ddd");
+        string dayName = dateValue.ToString("dddddddd"); //change this code if your dates are funky
 
         //assert
         Assert.AreEqual(testName, dayName);
