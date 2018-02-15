@@ -12,8 +12,8 @@ namespace DayOfWeek.Tests
     public void GetDay_ReturnDay()
     {
         //arrange
-        List<int> testDay = new List<int> {2018, 02, 15};
-        DayOfWeekGenerator newDWG = new DayOfWeekGenerator(2018, 02, 15);
+        List<int> testDay = new List<int> {2018, 2, 15};
+        DayOfWeekGenerator newDWG = new DayOfWeekGenerator(2018, 2, 15);
 
         //act
         List<int> dateInput = new List<int> {newDWG.GetYear(), newDWG.GetMonth(), newDWG.GetDay()};

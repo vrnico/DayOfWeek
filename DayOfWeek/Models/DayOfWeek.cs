@@ -6,30 +6,30 @@ namespace DayOfWeek.Models
 {
   public class DayOfWeekGenerator
   {
-      private int _day;
-      private int _month;
       private int _year;
+      private int _month;
+      private int _day;
 
-      public DayOfWeekGenerator(int day, int month, int year)
+      public DayOfWeekGenerator(int year, int month, int day)
       {
-          _day = day;
-          _month = month;
           _year = year;
+          _month = month;
+          _day = day;
       }
 
       public int GetYear()
       {
-          return 5;
+          return _year;
       }
 
       public int GetDay()
       {
-          return 0;
+          return _day;
       }
 
       public int GetMonth()
       {
-          return 0;
+          return _month;
       }
 
   }
