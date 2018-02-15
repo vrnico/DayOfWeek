@@ -20,5 +20,21 @@ namespace DayOfWeek.Tests
         //assert
         CollectionAssert.AreEqual(testDay, dateInput);
     }
+
+    [TestMethod]
+    public void TakeInputDate_ReturnDayOfTheWeek()
+    {
+        //arrange
+        string testName = "Thr";
+        List<int> testDay = new List<int> {2018, 2, 15};
+        DayOfWeekGenerator newDWG = new DayOfWeekGenerator(2018, 2, 15);
+
+        //act
+        DateTime dateValue = new DateTime(newDWG.GetYear(), newDWG.GetMonth(), newDWG.GetDay());
+        string dayName = dateValue.ToString("ddd");
+
+        //assert
+        Assert.AreEqual(testName, dayName);
+    }
   }
 }
