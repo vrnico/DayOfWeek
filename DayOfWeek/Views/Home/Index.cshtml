@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="~/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Butcherman" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>DayOfWeek Checker</title>
+  </head>
+  <div class="container">
+    <body>
+      <div class="jumbotron">
+        <h1>DayOfWeek DABBLE</h1>
+        <h2>f/h2>
+      </div>
+      <form action="/result" method="post">
+        <label for="word-input">ENTER YOUR WORD HERE</label>
+        <input type="text" name="word-input"></input>
+        <br><br>
+        <button type="submit" class="btn btn-danger">Submit (by submitting you are agreeing to pay the $50 fee)</button>
+      </form>
+
+      <div class="center">
+        <p class="result">@Model</p>
+      </div>
+    </div>
+  </body>
+</html>
