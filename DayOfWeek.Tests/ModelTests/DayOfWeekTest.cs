@@ -25,7 +25,7 @@ namespace DayOfWeek.Tests
     public void TakeInputDate_ReturnDayOfTheWeek()
     {
         //arrange
-        string testName = "Thr";
+        string testName = "Thu";
         List<int> testDay = new List<int> {2018, 2, 15};
         DayOfWeekGenerator newDWG = new DayOfWeekGenerator(2018, 2, 15);
 
