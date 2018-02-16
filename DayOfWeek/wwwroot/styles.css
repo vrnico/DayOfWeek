@@ -1,6 +1,6 @@
 .jumbotron {
   text-align: center;
-  background-image: url("https://media0.giphy.com/media/l3vR2oTYVyVPbuOLS/giphy.gif");
+  background-image: url("https://media.giphy.com/media/xT0xek6ofmgqSDdPCU/giphy.gif");
   background-size: cover;
   color: white;
   text-shadow: 5px 5px red;
@@ -16,11 +16,12 @@ label {
 .result {
   font-size: 10em;
   font-weight: bold;
-  color: red;
+  color: green;
   text-shadow: 10px 10px white;
-  font-family: 'Butcherman', cursive;
 }
 
 body {
   background-color: black;
+  background-image: url("https://media.giphy.com/media/3oEjHLxpSbN0ytehcQ/giphy.gif");
+  background-size: cover;
 }

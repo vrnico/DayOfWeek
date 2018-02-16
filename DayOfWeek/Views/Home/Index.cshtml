@@ -4,21 +4,39 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link rel="stylesheet" href="~/styles.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Butcherman" rel="stylesheet">
+
     <meta charset="utf-8">
     <title>DayOfWeek Checker</title>
   </head>
   <div class="container">
     <body>
       <div class="jumbotron">
-        <h1>DayOfWeek DABBLE</h1>
-        <h2>f/h2>
+        <h1>Welcome to the day of the week wizard!</h1>
+        <h2>for normies who can't do the math in their head</h2>
       </div>
       <form action="/result" method="post">
-        <label for="word-input">ENTER YOUR WORD HERE</label>
-        <input type="text" name="word-input"></input>
+       <label for="month-input">Month:</label>
+       <select name="month-input" class="form-control" required>
+           <option value="1">January</option>
+           <option value="2">February</option>
+           <option value="3">March</option>
+           <option value="4">April</option>
+           <option value="5">May</option>
+           <option value="6">June</option>
+           <option value="7">July</option>
+           <option value="8">August</option>
+           <option value="9">September</option>
+           <option value="10">October</option>
+           <option value="11">November</option>
+           <option value="12">December</option>
+       </select>
+       <label for="day-input">Day:</label>
+       <input type="number" name="day-input"  required max="31"></input>
+       <label for="year-input">Year:</label>
+       <input type="number" name="year-input"  required max="9999"></input>
+
         <br><br>
-        <button type="submit" class="btn btn-danger">Submit (by submitting you are agreeing to pay the $50 fee)</button>
+        <button type="submit" class="btn btn-danger">Submit</button>
       </form>
 
       <div class="center">

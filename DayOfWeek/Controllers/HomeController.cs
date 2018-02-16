@@ -11,18 +11,17 @@ namespace DayOfWeek.Controllers
       string emptyString = "";
       return View("Index", emptyString);
     }
+
+    [HttpPost("/result")]
+    public ActionResult Result()
+    {
+      int month = int.Parse(Request.Form["month-input"]);
+      int day = int.Parse(Request.Form["day-input"]);
+      int year = int.Parse(Request.Form["year-input"]);
+      DayOfWeekGenerator newDayOfWeekGenerator = new DayOfWeekGenerator(year, month, day);
+      string model = newDayOfWeekGenerator.ReturnDayOfWeek();
+
+      return View("Index", model);
+    }
   }
 }
-
-//     [HttpPost("/result")]
-//     public ActionResult Result()
-//     {
-//       string word = Request.Form["word-input"];
-//
-//       ScrabbleGenerator newScrabbleGenerator = new ScrabbleGenerator(word);
-//       newScrabbleGenerator.BreakWord();
-//       int wordVal = newScrabbleGenerator.WordCharVal();
-//       return View("Index", wordVal);
-//     }
-//   }
-// }

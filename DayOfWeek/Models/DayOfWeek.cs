@@ -31,6 +31,11 @@ namespace DayOfWeek.Models
       {
           return _month;
       }
+      public string ReturnDayOfWeek()
+      {
+          DateTime dt = new DateTime(_year, _month, _day);
+          return dt.DayOfWeek.ToString();
+      }
 
   }
 }
